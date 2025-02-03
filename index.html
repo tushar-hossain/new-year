@@ -11,6 +11,11 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1e86394c92.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- custom -->
     <style type="text/tailwindcss">
       @theme {
@@ -26,10 +31,10 @@
     <header class="w-11/12 mx-auto p-4 mb-6">
       <!-- banner start -->
       <div
-        class="z-0 hero bg-[url(./images/Banner.png)] bg-no-repeat bg-cover bg-center lg:h-[500px] relative"
+        class="z-0 hero bg-[url(./images/Banner.png)] bg-no-repeat bg-cover bg-center lg:h-[500px] relative rounded-lg"
       >
         <div
-          class="z-[1] w-full h-full bg-gradient-to-t from-[#d8d8d857] to-[#000000f1] absolute"
+          class="z-[1] w-full h-full bg-gradient-to-t from-[#d8d8d857] to-[#000000f1] absolute rounded-lg"
         ></div>
 
         <div class="hero-content text-center z-10">
@@ -65,12 +70,12 @@
       </section>
 
       <!-- welcome section -->
-      <section class="w-11/12 mx-auto p-4 mb-10">
+      <section class="w-11/12 mx-auto p-4 mb-10 ">
         <div
-          class="z-0 bg-[url('./images/Vectorrr.png')] bg-no-repeat bg-cover bg-center relative"
+          class="z-0 bg-[url('./images/Vectorrr.png')] bg-no-repeat bg-cover bg-center relative rounded-lg"
         >
           <div
-            class="absolute bg-gradient-to-r from-[#000000] to-[#ffffff33] h-full w-full -z-[1]"
+            class="absolute bg-gradient-to-r from-[#000000] to-[#ffffff33] h-full w-full -z-[1] rounded-lg"
           ></div>
 
           <div
@@ -98,7 +103,7 @@
       <!-- hotel section -->
       <section>
         <div
-          class="w-11/12 mx-auto p-4 mb-10 bg-gradient-to-t from-[#ffffff] to-[#ffe6e6]"
+          class="w-11/12 mx-auto p-4 mb-10 bg-gradient-to-t from-[#ffffff] to-[#ffe6e6] rounded-lg"
         >
           <!-- hotel park -->
           <div class="text-center p-5 lg:py-8">
@@ -182,9 +187,110 @@
           </div>
         </div>
       </section>
+
+      <!-- portfolio -->
+      <section class="w-11/12 mx-auto p-4 mb-10">
+        <div>
+          <p class="text-xl font-medium text-[#FF0000]">THE BEST GIFTS</p>
+          <h1
+            class="text-xl lg:text-5xl font-bold my-5 text-center lg:text-left"
+          >
+            Our Awesome Portfolio
+          </h1>
+          <p>
+            Dolor sit amet consectetur. Consequat eget consectetur maecenas sed
+            molestie malesuada. Ipsum sed sodales risus ut pellentesque vel
+            euismod.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-6">
+          <div>
+            <img src="./images/Rectangle3.png" alt="" />
+          </div>
+          <div>
+            <img src="./images/Rectangle4.png" alt="" />
+          </div>
+          <div>
+            <img src="./images/Rectangle5.png" alt="" />
+          </div>
+          <div>
+            <img src="./images/Rectangle6.png" alt="" />
+          </div>
+          <div>
+            <img src="./images/Rectangle7.png" alt="" />
+          </div>
+          <div>
+            <img src="./images/Rectangle8.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- subscribe  -->
+      <section class="w-11/12 mx-auto p-4 mb-10">
+        <div class="text-center p-7 lg:py-12 rounded-lg bg-[#fff2f2] space-y-5">
+          <div class="flex items-center justify-center">
+            <img src="./images/Group 61.png" alt="" />
+          </div>
+          <h1 class="text-xl lg:text-5xl font-bold">Subscribe Newsletter</h1>
+          <p>
+            Dolor sit amet consectetur. Consequat eget consectetur maecenas sed
+            molestie malesuada. Ipsum sed sodales risus ut pellentesque vel
+            euismod.
+          </p>
+          <div>
+            <input
+              class="p-3 w-72 rounded-s-lg"
+              type="email"
+              placeholder="user@gmail.com"
+            />
+            <input
+              class="p-3 bg-[#FF0000] text-white rounded-e-lg -ml-1"
+              type="button"
+              value="Subscribe"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
-    <footer></footer>
+    <footer class="bg-black">
+      <div class="w-11/12 mx-auto space-y-6 p-6 text-white">
+        <div
+          class="flex flex-col lg:flex-row justify-between space-y-6 lg:space-y-0"
+        >
+          <div>
+            <address>
+              <p>
+                44, Big Building Roosevelt Street <br />
+                Beach Gardens Florida 33410
+              </p>
+            </address>
+          </div>
+          <div>
+            <address>
+              <p>
+                <span><i class="fa-solid fa-phone lg:ml-7"></i></span> +00 123
+                584 124
+              </p>
+              <p>
+                <span><i class="fa-solid fa-globe lg:ml-7"></i></span>
+                www.website.com
+              </p>
+            </address>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-7">
+          <i class="fa-brands fa-facebook text-2xl text-blue-500"></i>
+          <i class="fa-brands fa-instagram text-2xl text-orange-400"></i>
+          <i class="fa-brands fa-x-twitter text-2xl"></i>
+          <i class="fa-brands fa-linkedin text-2xl text-blue-500"></i>
+        </div>
+        <div class="flex justify-between">
+          <p>2017, All Rights Reserved.</p>
+          <p>Unsubscribe</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
